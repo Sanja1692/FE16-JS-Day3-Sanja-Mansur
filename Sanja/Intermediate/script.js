@@ -82,7 +82,7 @@ for (var i = 1; i < 100; i++) {
         console.log(i)
     }
 }
-//second way  - overwriting the number
+//second way ARRAY - overwriting the number
 var arr = [];
 
 for (var i = 1; i <= 100; i++) {
@@ -98,3 +98,23 @@ for (var i = 1; i <= 100; i++) {
 }
 
 console.log(arr);
+
+//ex 3
+// try to recreate this form using a loop :
+// *
+// **
+// ***
+// ****
+//in array:
+var stars = [];
+for (var i = 0; i <= 10; i++) {
+    stars.push("*");
+    console.log(stars);
+}
+
+// second way - right way
+var star = "";
+for (var i = 0; i <= 10; i++) {
+    star += "*";
+    console.log(star);
+}
