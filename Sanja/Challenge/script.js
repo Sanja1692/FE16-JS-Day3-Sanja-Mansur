@@ -1,39 +1,12 @@
-// Intermediate
-// ex 1 | Compare two numbers 
+// Challenge
+// To solve this task, you will need two arrays: Student and MathGrades. The arrays should have respectively in Students, the students names and in the MathGrades, in the same index, the students grade for Maths going from 0 to 100.
 // Create a JavaScript program that will show the average grade for each student.
-var arr = [
-    ["Martin", 76],
-    ["Thomas", 85],
-    ["Klaus", 65],
-    ["Maria", 93],
-    ["David", 81]
-]
 
-var sum = 0;
-
-for (var i = 0; i < arr.length; i++) {
-    if (arr[i][1] < 60) {
-        console.log(`${arr[i][0]} get's an F`);
-    } else if (arr[i][1] < 70) {
-        console.log(`${arr[i][0]} get's an D`);
-    } else if (arr[i][1] < 80) {
-        console.log(`${arr[i][0]} get's an C`);
-    } else if (arr[i][1] < 90) {
-        console.log(`${arr[i][0]} get's an B`)
-    } else {
-        console.log(`${arr[i][0]} get's an A`)
-    }
-    sum += arr[i][1];
-}
-
-console.log("The average Grade is " + sum / arr.length);
-
-//second way
-var studentPoints = [
-    ["Martin", "Thomas", "Klaus", "Maria", "David"],
-    [76, 85, 65, 93, 81]
+var MathGrades = [
+    ["Martin", "Thomas", "Klaus", "Maria", "David", "Sanja", "John"],
+    [76, 85, 65, 93, 81, 100, 91]
 ];
-
+var student = prompt("Enter a student's name please");
 for (i = 0; i < 5; i++) {
     if (studentPoints[1][i] < 60) {
         console.log((studentPoints[0][i]) + ", you have " + (studentPoints[1][i]) + " points. Your grade is F.");
