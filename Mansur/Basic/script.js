@@ -22,32 +22,41 @@ console.log(maxNumber(array));
 
 
 let div = document.getElementById('weather');
+let image = document.getElementById("img");
 
 if (getRandomInt(-5,35) <= 0) {
     div.innerHTML = "The weather is really cold. Feels like winter weather"
-    document.getElementsByClassName("img").write = "<img src='https://i.inews.co.uk/content/uploads/2019/01/GettyImages-925843548.jpg' width='100%'>"
+    image.setAttribute("src", "https://i.inews.co.uk/content/uploads/2019/01/GettyImages-925843548.jpg")
+    image.setAttribute("width", "100%")
+
 } else if (getRandomInt(-5,35) <= 10) {
     div.innerHTML = "The weather is kind of cold"
-    document.getElementsByClassName("img").write = "<img src='https://th.bing.com/th/id/R.d8fa21b9cefd72fa29246303472ed963?rik=c%2fdVmtl4c5Lhmg&pid=ImgRaw&r=0' width='100%'>"
+    image.setAttribute("src", "https://th.bing.com/th/id/OIP.OIs7PFkJfFFmvXLT2vxpBgHaFj?pid=ImgDet&rs=1")
+    image.setAttribute("width", "100%")
 } else if (getRandomInt(-5,35) <= 15) {
     div.innerHTML = "The weather is nice but I'll still need a jacket"
-    document.getElementsByClassName("img").write = "<img src='https://th.bing.com/th/id/R.d8fa21b9cefd72fa29246303472ed963?rik=c%2fdVmtl4c5Lhmg&pid=ImgRaw&r=0' width='100%'>"
+    image.setAttribute("src", "https://newsimage.radio.gov.pk/20200510/3124793131589087765.jpg")
+    image.setAttribute("width", "100%")
 
 } else if (getRandomInt(-5,35) <= 20) {
     div.innerHTML = "The weather is comfortably warm"
-    document.getElementsByClassName("img").write = "<img src='https://th.bing.com/th/id/R.d8fa21b9cefd72fa29246303472ed963?rik=c%2fdVmtl4c5Lhmg&pid=ImgRaw&r=0' width='100%'>"
+    image.setAttribute("src", "https://th.bing.com/th/id/OIP._6UW1704oYjKYfVcf84iMgHaEc?pid=ImgDet&rs=1")
+    image.setAttribute("width", "100%")
 
 } else if (getRandomInt(-5,35) <= 25) {
     div.innerHTML = "The weather is beautiful"
-    document.getElementsByClassName("img").write = "<img src='https://th.bing.com/th/id/R.d8fa21b9cefd72fa29246303472ed963?rik=c%2fdVmtl4c5Lhmg&pid=ImgRaw&r=0' width='100%'>"
+    image.setAttribute("src", "https://i.inews.co.uk/content/uploads/2019/01/GettyImages-925843548.jpg")
+    image.setAttribute("width", "100%")
 
 } else if (getRandomInt(-5,35) <= 30) {
-    div.innerHTML = "The weather is getting warm. Maybe a good time to go swimming?"
-    document.getElementsByClassName("img").write = "<img src='https://th.bing.com/th/id/R.d8fa21b9cefd72fa29246303472ed963?rik=c%2fdVmtl4c5Lhmg&pid=ImgRaw&r=0' width='100%'>"
+    div.innerHTML = "The weather is getting hot. Maybe a good time to go swimming?"
+    image.setAttribute("src", "https://th.bing.com/th/id/R.15b2562897def34c57b6649755f452f5?rik=NoaunSbjHorESw&pid=ImgRaw&r=0")
+    image.setAttribute("width", "100%")
 
 } else if (getRandomInt(-5,35) <= 35) {
     div.innerHTML = "The weather is really hot outside"
-    document.getElementsByClassName("img").write = "<img src='https://th.bing.com/th/id/R.d8fa21b9cefd72fa29246303472ed963?rik=c%2fdVmtl4c5Lhmg&pid=ImgRaw&r=0' width='100%'>"
+    image.setAttribute("src", "https://timesofislamabad.com/digital_images/large/2020-06-20/hot-and-dry-weather-expected-in-most-parts-of-country-1592635187-6870.jpg")
+    image.setAttribute("width", "100%")
 
 }
 
