@@ -1,71 +1,54 @@
-// Intermediate
-// ex 1 | Compare two numbers 
+// Challenge
+// To solve this task, you will need two arrays: Student and MathGrades. The arrays should have respectively in Students, the students names and in the MathGrades, in the same index, the students grade for Maths going from 0 to 100.
 // Create a JavaScript program that will show the average grade for each student.
-var arr = [
-    ["Martin", 76],
-    ["Thomas", 85],
-    ["Klaus", 65],
-    ["Maria", 93],
-    ["David", 81]
-]
 
-var sum = 0;
+// student = ["Martin", "Thomas", "Klaus", "Maria", "David", "Sanja", "John"];
+// var mathGrades = [76, 85, 65, 93, 81, 100, 91];
+// var student = prompt("Enter a student's name please");
+// if (student.indexOf(studentName) > -1) { //indexof returns -1 for no match, and a number for match
+//     document.getElementById("student").innerHTML = studentName;
+//     var gradeIndex = student.indexOf(studentName);
+//     var points = mathGrades[gradeIndex];
+//     document.getElementById("points").innerHTML = points;
+// } else {
+//     document.getElementById("statement").innerHTML = ("Sorry " + studentName + " doesn't seem to be a math student."); // fail statement
+// }
 
-for (var i = 0; i < arr.length; i++) {
-    if (arr[i][1] < 60) {
-        console.log(`${arr[i][0]} get's an F`);
-    } else if (arr[i][1] < 70) {
-        console.log(`${arr[i][0]} get's an D`);
-    } else if (arr[i][1] < 80) {
-        console.log(`${arr[i][0]} get's an C`);
-    } else if (arr[i][1] < 90) {
-        console.log(`${arr[i][0]} get's an B`)
-    } else {
-        console.log(`${arr[i][0]} get's an A`)
-    }
-    sum += arr[i][1];
+// if (points < 60) {
+//     document.getElementById("points").style.color = "red"
+// }
+// if (points < 70 && points >= 60) {
+//     document.getElementById("points").style.color = "orange"
+// }
+// if (points < 80 && points >= 70) {
+//     document.getElementById("points").style.color = "yellow"
+// }
+// if (points < 90 && points >= 80) {
+//     document.getElementById("points").style.color = "blue"
+// }
+// if (points <= 100 && points >= 90) {
+//     document.getElementById("points").style.color = "green"
+// }
+
+Student = ["John", "Jane", "Jim", "Johanna", "Martin", "Thomas", "Klaus", "Maria", "David", "Sanja"]
+MathGrades = [70, 85, 60, 100, 76, 85, 65, 93, 81, 100]
+var studentName = prompt("Enter a student's name please")
+
+if (Student.indexOf(studentName) > -1) { //indexof returns -1 for no match, and a number for match
+    document.getElementById("student").innerHTML = studentName;
+    var gradeIndex = Student.indexOf(studentName);
+    var points = MathGrades[gradeIndex];
+    document.getElementById("points").innerHTML = points;
+} else {
+    document.getElementById("statement").innerHTML = ("Sorry " + studentName + " doesn't seem to be a math student."); // fail statement
 }
 
-console.log("The average Grade is " + sum / arr.length);
-
-//second way
-var studentPoints = [
-    ["Martin", "Thomas", "Klaus", "Maria", "David"],
-    [76, 85, 65, 93, 81]
-];
-
-for (i = 0; i < 5; i++) {
-    if (studentPoints[1][i] < 60) {
-        console.log((studentPoints[0][i]) + ", you have " + (studentPoints[1][i]) + " points. Your grade is F.");
-    }
-    if (studentPoints[1][i] < 70 && studentPoints[1][i] >= 60) {
-        console.log(studentPoints[0][i] + ", you have " + studentPoints[1][i] + " points. Your grade is D.");
-    }
-    if (studentPoints[1][i] < 80 && studentPoints[1][i] >= 70) {
-        console.log(studentPoints[0][i] + ", you have " + studentPoints[1][i] + " points. Your grade is C.");
-    }
-    if (studentPoints[1][i] < 90 && studentPoints[1][i] >= 80) {
-        console.log(studentPoints[0][i] + ", you have " + studentPoints[1][i] + " points. Your grade is B.");
-    }
-    if (studentPoints[1][i] <= 100 && studentPoints[1][i] >= 90) {
-        console.log(studentPoints[0][i] + ", you have " + studentPoints[1][i] + " points. Your grade is A.");
-    }
-}
-
-var average = (studentPoints[1][0] + studentPoints[1][1] + studentPoints[1][2] + studentPoints[1][3] + studentPoints[1][4]) / 5;
-
-if (average < 60) {
-    console.log("Class, you have " + average + " points on avarage. Your average grade is F.");
-}
-if (average < 70 && average >= 60) {
-    console.log("Class, you have " + average + " points on avarage. Your average grade is D.");
-}
-if (average < 80 && average >= 70) {
-    console.log("Class, you have " + average + " points on avarage. Your average grade is C.");
-}
-if (average < 90 && average >= 80) {
-    console.log("Class, you have " + average + " points on avarage. Your average grade is B.");
-}
-if (average <= 100 && average >= 90) {
-    console.log("Class, you have " + average + " points on avarage. Your average grade is A.");
+if (points < 60) {
+    document.getElementById("points").style.color = "red";
+} else if (points >= 60 && points < 70) {
+    document.getElementById("points").style.color = "orange";
+} else if (points >= 70 && points < 100) {
+    document.getElementById("points").style.color = "green";
+} else if (points >= 100) {
+    document.getElementById("points").style.color = "blue";
 }
