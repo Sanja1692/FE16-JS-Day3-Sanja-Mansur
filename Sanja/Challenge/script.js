@@ -69,32 +69,3 @@ if (average < 90 && average >= 80) {
 if (average <= 100 && average >= 90) {
     console.log("Class, you have " + average + " points on avarage. Your average grade is A.");
 }
-
-// ex 2 | FizzBuzz
-for (var i = 1; i < 100; i++) {
-    if (i % 5 == 0 && i % 3 == 0) {
-        console.log(i + " FizzBuzz") // For overwriting just delete i+
-    } else if (i % 3 == 0) {
-        console.log(i + " Fizz")
-    } else if (i % 5 == 0) {
-        console.log(i + " Buzz")
-    } else {
-        console.log(i)
-    }
-}
-//second way  - overwriting the number
-var arr = [];
-
-for (var i = 1; i <= 100; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        arr.push("Fizz-Buzz");
-    } else if (i % 5 === 0) {
-        arr.push("Buzz");
-    } else if (i % 3 === 0) {
-        arr.push("Fizz");
-    } else {
-        arr.push(i);
-    }
-}
-
-console.log(arr);
